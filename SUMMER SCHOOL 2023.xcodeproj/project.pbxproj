@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		11D7FB922A78EE1A00D1C759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7FB912A78EE1A00D1C759 /* AppDelegate.swift */; };
 		11D7FB942A78EE1A00D1C759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7FB932A78EE1A00D1C759 /* SceneDelegate.swift */; };
-		11D7FB962A78EE1A00D1C759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7FB952A78EE1A00D1C759 /* ViewController.swift */; };
+		11D7FB962A78EE1A00D1C759 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7FB952A78EE1A00D1C759 /* ProfileViewController.swift */; };
 		11D7FB9B2A78EE1B00D1C759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D7FB9A2A78EE1B00D1C759 /* Assets.xcassets */; };
 		11D7FB9E2A78EE1B00D1C759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D7FB9C2A78EE1B00D1C759 /* LaunchScreen.storyboard */; };
+		11D7FBAE2A78F1D700D1C759 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7FBAD2A78F1D700D1C759 /* ProfileRouter.swift */; };
+		11D7FBB02A78F1E600D1C759 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7FBAF2A78F1E600D1C759 /* ProfilePresenter.swift */; };
+		11D7FBB22A78F1F300D1C759 /* ProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7FBB12A78F1F300D1C759 /* ProfileAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11D7FB8E2A78EE1A00D1C759 /* SUMMER SCHOOL 2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SUMMER SCHOOL 2023.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D7FB912A78EE1A00D1C759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11D7FB932A78EE1A00D1C759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11D7FB952A78EE1A00D1C759 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11D7FB952A78EE1A00D1C759 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		11D7FB9A2A78EE1B00D1C759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11D7FB9D2A78EE1B00D1C759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11D7FB9F2A78EE1B00D1C759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11D7FBAD2A78F1D700D1C759 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		11D7FBAF2A78F1E600D1C759 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		11D7FBB12A78F1F300D1C759 /* ProfileAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		11D7FB902A78EE1A00D1C759 /* SUMMER SCHOOL 2023 */ = {
 			isa = PBXGroup;
 			children = (
-				11D7FB912A78EE1A00D1C759 /* AppDelegate.swift */,
-				11D7FB932A78EE1A00D1C759 /* SceneDelegate.swift */,
-				11D7FB952A78EE1A00D1C759 /* ViewController.swift */,
-				11D7FB9A2A78EE1B00D1C759 /* Assets.xcassets */,
-				11D7FB9C2A78EE1B00D1C759 /* LaunchScreen.storyboard */,
+				11D7FBAA2A78F01800D1C759 /* Application */,
+				11D7FBAC2A78F04300D1C759 /* Presentation */,
+				11D7FBAB2A78F02E00D1C759 /* Resources */,
 				11D7FB9F2A78EE1B00D1C759 /* Info.plist */,
 			);
 			path = "SUMMER SCHOOL 2023";
+			sourceTree = "<group>";
+		};
+		11D7FBA62A78EFCB00D1C759 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				11D7FBB12A78F1F300D1C759 /* ProfileAssembly.swift */,
+				11D7FBAF2A78F1E600D1C759 /* ProfilePresenter.swift */,
+				11D7FBAD2A78F1D700D1C759 /* ProfileRouter.swift */,
+				11D7FB952A78EE1A00D1C759 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		11D7FBAA2A78F01800D1C759 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				11D7FB912A78EE1A00D1C759 /* AppDelegate.swift */,
+				11D7FB932A78EE1A00D1C759 /* SceneDelegate.swift */,
+				11D7FB9C2A78EE1B00D1C759 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		11D7FBAB2A78F02E00D1C759 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11D7FB9A2A78EE1B00D1C759 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11D7FBAC2A78F04300D1C759 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				11D7FBA62A78EFCB00D1C759 /* Profile */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11D7FB962A78EE1A00D1C759 /* ViewController.swift in Sources */,
+				11D7FBAE2A78F1D700D1C759 /* ProfileRouter.swift in Sources */,
+				11D7FB962A78EE1A00D1C759 /* ProfileViewController.swift in Sources */,
 				11D7FB922A78EE1A00D1C759 /* AppDelegate.swift in Sources */,
+				11D7FBB02A78F1E600D1C759 /* ProfilePresenter.swift in Sources */,
 				11D7FB942A78EE1A00D1C759 /* SceneDelegate.swift in Sources */,
+				11D7FBB22A78F1F300D1C759 /* ProfileAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
